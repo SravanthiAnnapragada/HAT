@@ -1,0 +1,193 @@
+<div class="container" style="margin-top: 1%">
+  <div class="row">
+    <!-- <div class="col-md-2"> -->
+    <!-- <button class="btn btn-info" (click)="getCompanyDetails()">GetList</button> -->
+    <!-- </div> -->
+    <div class="col-md-12">
+      <table datatable class="row-border hover table-bordered">
+        <thead class="bg-secondary text-light">
+          <tr>
+            <th>Company Name</th>
+            <th>Additional Comments</th>
+            <th>Address</th>
+            <th>Tagging</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <p>{{data|json}}</p> -->
+          <tr *ngFor="let Data of CompanyList">
+            <!-- <td data-toggle="modal" data-target="#myModal" (click)="onRow($event)" >{{Data.CompanyName}}</td> -->
+            <td>{{Data.CompanyName}}</td>
+            <td>{{Data.AdditionalComments}}</td>
+            <td>{{Data.address}}</td>
+            <td>
+              <span>
+                <button class="btn-lg btn-success" style="padding: .1rem 3.3rem;" data-toggle="modal" data-target="#myBtnModal">
+                4 </button>
+              </span>
+            </td>
+            <td>
+              <span>
+                  <!-- <button class="btn-sm btn-outline-info" data-toggle="modal" data-target="#myModal" (click)="onEdit();">Edit</button> -->
+                <button class="btn-sm btn-outline-info" data-toggle="modal" data-target="#myModal" (click)="onRow($event)">Edit</button>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- <div class="col-md-2"></div> -->
+  </div>
+</div>
+
+
+<!--Modal-->
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: steelblue; color:whitesmoke;height: 60px;">
+        <h4 class="modal-title">View/Edit Company Data</h4>
+        <button type="button" class="close" data-dismiss="modal" style="background-color: #ff0800">&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f.value);f.reset()">
+          <div class="form-group">
+            <label for="cname">Company Name:</label>
+            <!-- <input class="form-control" type="text" id="cname" name="CompanyName" ngModel [(ngModel)]="clist.CompanyName" #CompanyName="ngModel"> -->
+            <input class="form-control" 
+            type="text"
+             id="cname"
+              value="{{UpdateData}}"
+              ngModel
+              name="cname"
+              #cname="ngModel" >
+          </div>
+          <div class="form-group">
+            <label for="acomment">Additional Comments:</label>
+            <!-- <input class="form-control" type="text" id="acomment" name="AdditionalComments" ngModel [(ngModel)]="clist.AdditionalComments" #AdditionalComments="ngModel"> -->
+            <input class="form-control" 
+            type="text" 
+            id="acomments" 
+            name="acomments"
+            value="{{UpdateData1}}" 
+            ngModel
+           [(ngModel)]="ModalFormData.acomments"
+            #acomments="ngModel">
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea  
+            class="form-control"  
+            row="2" 
+            id="address"
+             name="address" 
+             value="{{UpdateData2}}" 
+             ngModel
+             #address="ngModel">
+            </textarea>
+          </div>
+          <div class="form-group">
+            <label for="website">Website:</label>
+            <input class="form-control"
+             type="text" 
+             id="website"
+             name="website"
+             ngModel
+             #website="ngModel">
+          </div>
+          <div class="form-group">
+            <label for="contactno">Contact No:</label>
+            <input class="form-control"
+             type="text" 
+             id="contactno"
+             name="contactno"
+             ngModel
+             #contactno="ngModel">
+          </div>
+          <div class="form-group">
+            <label for="tagging">Tagging:</label>
+            <input class="form-control" 
+            type="text" 
+            id="tagging"
+            name="tagging"
+            ngModel
+            #tagging="ngModel">
+          </div>
+          <div class="form-group">
+            <label for="zcomments">ZettaMine Comments:</label>
+            <input 
+            class="form-control"
+             type="text" 
+             id="zcomments"
+             name="zcomments"
+             ngModel
+             #zcomments="ngModel">
+          </div>
+          <div class="form-group">
+            <label for="ztagging">ZettaMine Tagging:</label>
+            <select class="form-control"
+             id="ztagging"
+             name="ztagging"
+             ngModel
+             #ztagging="ngModel">
+              <option>Can hire</option>
+              <option>Can not hire</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-info" data-dismiss="modal">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--II Modal-->
+
+<div id="myBtnModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">          
+          <h4 class="modal-title">Modal Header</h4>
+          <button type="button" class="close"style="background-color:red" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="cname">ZettaMine Comments:</label>
+              <!-- <input class="form-control" type="text" id="cname" name="CompanyName" ngModel [(ngModel)]="clist.CompanyName" #CompanyName="ngModel"> -->
+              <input class="form-control" 
+              type="text"
+               id="Comments"              
+               name="cname">
+            </div>
+            <div class="form-group">
+              <label for="cname">ZettaMine Tagging:</label>
+              <!-- <input class="form-control" type="text" id="cname" name="CompanyName" ngModel [(ngModel)]="clist.CompanyName" #CompanyName="ngModel"> -->
+              <select class="form-control" 
+              type="text"
+               id="Comments"              
+               name="cname">
+               <option>Can hire</option>
+               <option>Can not hire</option></select>
+            </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>

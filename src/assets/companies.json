@@ -1,0 +1,105 @@
+{
+    "CompaniesList": [
+        {
+            "id":1,
+            "CompanyName": "1FB Support Services",
+            "AdditionalComments": "",
+            "address": "Tower - C, Level - 1 ,The Millenia No: 1 & 2,Murphy Road, Ulsoor Bangalore - 8 ",
+            "Tagging":""
+        
+        },
+        {
+            "id":2,
+            "CompanyName": "24/7 Customer",
+            "AdditionalComments": "",
+            "address": "Embassy Golf Links Business Park, Challaghatta Village, Off Intermediate Ring Road, Varthur Hobli, South Taluk, Bengalooru 71 http://www.247customer.com Tel: +91 80 30582470. ",
+            "Tagging":""
+
+        },
+        {
+            "id":3,
+            "CompanyName": "3 Global Services",
+            "AdditionalComments": "",
+            "address": "Prism Towers, Mindspace, Off. Chincholi Bunder Link Road, Goregaon (west), Mumbai",
+            "Tagging":""
+        },
+        {
+            "id":4,
+            "CompanyName": "3com India Pvt Ltd",
+            "AdditionalComments": "",
+            "address": "MARS Telecom Systems Pvt. Ltd., Road No. 1, Jubilee Hills, Hyderabad 500033. Andhra Pradesh",
+            "Tagging":""
+        },
+            {
+             "id":5,
+            "CompanyName": "3Core System",
+            "AdditionalComments": "",
+            "address": "Add A: 1920, South Highland, Avenue Suite #225, Lombard IL 60148, Chicago. Tel:001-630-748-8800",
+            "Tagging":""
+        },
+        {
+            "id":6,
+            "CompanyName": "3Di Systems India Pvt Ltd",
+            "AdditionalComments": "",
+            "address": "#409, Building 2, Sector 1, Millennium Business Park, Mahape, Navi Mumbai, Maharashtra - 400701Website: www.3disystems.com",
+            "Tagging":""
+        },
+        {
+            "id":7,
+            "CompanyName": "3DPLM Software solution",
+            "AdditionalComments": "",
+            "address": "Plot 5,6,8 Pune Infotech Park,MIDC Hinjewadi, Taluka Mulshi,Pune 411057 India",
+            "Tagging":""
+        },
+        {
+            "id":8,
+            "CompanyName": "3idemsoft solutions",
+            "AdditionalComments": "",
+            "address": "408B, sri kalki gardens, madinaguda, hyd - 50, 040- 65993567",
+            "Tagging":""
+        },
+        {
+            "id":9,
+            "CompanyName": "KPMG (KPMG Global Services Private Limited)",
+            "AdditionalComments": "",
+            "address": "Bellavista Campus Raj Bhavan Road Khairtabad Hyderabad Maruthi InfoTech Cenre 11-12/1 Inner Ring Road, Koramangala Bangalore",
+            "Tagging":""
+        },
+        {
+            "id":10,
+            "CompanyName": "3i Infotech Consultantcy Services Ltd (e-enable Technologies) (3i Infotech Limited)",
+            "AdditionalComments": "",
+            "address": "Add: Road, Lifestyle Building, Alwarpet, Chennai",
+            "Tagging":""
+        },
+        {
+            "id":11,
+            "CompanyName": "9 apps",
+            "AdditionalComments": "",
+            "address": "2nd Floor Green House Hutch Building, Beside To Aditya Trade Centre, Ameerpet, Hyderabad – 500016, phone no-0404-42000390 (www.nineappz.com)",
+            "Tagging":""
+        },
+        {
+            "id":12,
+            "CompanyName": "9nsystems",
+            "AdditionalComments": "",
+            "address": "4th Cross, 9th Main, BTM Second Stage, Bangalore-76.",
+            "Tagging":""
+        },
+        {
+            "id":13,
+            "CompanyName": "A & D Software Pvt Ltd",
+            "AdditionalComments": "AngularJS, angular, Node",
+            "address": "No 4 19th Cross Malleswaram Bangalore Ph:080-2345345",
+            "Tagging":""
+        },
+        {
+            "id":14,
+            "CompanyName": "DataMine Services",
+            "AdditionalComments": "",
+            "address": "Tower - C, Level - 1 ,The Millenia No: 1 & 2,Murphy Road, Ulsoor Bangalore - 8 ",
+            "Tagging":""
+        
+        }
+    ]
+}
